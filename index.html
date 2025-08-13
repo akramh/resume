@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akram Hassan - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: white;
+        }
+        
+        .resume {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid #8e44ad;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .title {
+            font-size: 1.1rem;
+            color: #8e44ad;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+            font-weight: 400;
+        }
+        
+        /* Section Styling */
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px solid #ecf0f1;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .summary-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #34495e;
+            text-align: justify;
+        }
+        
+        /* Experience Styling */
+        .job {
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 3px solid #8e44ad;
+            position: relative;
+        }
+        
+        .job::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            background: #8e44ad;
+            border-radius: 50%;
+        }
+        
+        .job-header {
+            margin-bottom: 0.8rem;
+        }
+        
+        .company-role {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.2rem;
+        }
+        
+        .company {
+            color: #8e44ad;
+        }
+        
+        .duration {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        
+        .job-description {
+            color: #34495e;
+            line-height: 1.6;
+        }
+        
+        .job-point {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        
+        .job-point::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #8e44ad;
+            font-weight: bold;
+        }
+        
+        /* Achievements Styling */
+        .achievement-group {
+            margin-bottom: 1rem;
+        }
+        
+        .achievement-category {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+        }
+        
+        .achievement-text {
+            color: #34495e;
+            padding-left: 1rem;
+            border-left: 3px solid #8e44ad;
+            margin-bottom: 0.8rem;
+        }
+        
+        /* Education Styling */
+        .education-item {
+            font-size: 1rem;
+            color: #34495e;
+            margin-bottom: 0.5rem;
+            padding: 0.8rem;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #8e44ad;
+        }
+        
+        /* Print Styles */
+        @media print {
+            .resume {
+                box-shadow: none;
+                padding: 0.3in;
+            }
+            
+            body {
+                background: white !important;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 1.5rem;
+            }
+            
+            .job {
+                page-break-inside: avoid;
+                margin-bottom: 1.5rem;
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .resume {
+                padding: 1rem;
+                margin: 0;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="name">Akram Hassan</h1>
+            <div class="title">Founder & CEO | AI-Driven Growth Platforms | Ex-Uber, Microsoft</div>
+            <div class="contact">Email: akramh@gmail.com | LinkedIn: linkedin.com/in/akramh | Seattle, WA</div>
+        </div>
+        
+        <!-- Summary -->
+        <div class="section">
+            <h2 class="section-title">Summary</h2>
+            <p class="summary-text">
+                Product and technology leader with 20+ years building platforms that scale to hundreds of millions of users. Founder of Rengage, creating the world's first AI-agent network for real-time, 1:1 customer personalization. Proven track record of driving massive growth, revenue impact, and operational efficiency at Uber, Microsoft, and high-growth startups.
+            </p>
+        </div>
+        
+        <!-- Experience -->
+        <div class="section">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-role"><span class="company">Rengage</span> – Founder & CEO</div>
+                    <div class="duration">2023 – Present</div>
+                </div>
+                <div class="job-description">
+                    <div class="job-point">Built an AI agent–powered marketing platform that personalizes every message for every user in real time.</div>
+                    <div class="job-point">Enabled brands to automate segmentation, journey orchestration, and content creation—eliminating engineering and agency dependencies.</div>
+                    <div class="job-point">Secured six-figure annual contracts and grew customer base across gaming, marketplaces, and e-learning.</div>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-role"><span class="company">Netlify</span> – VP of Product, Design & Growth</div>
+                    <div class="duration">2021 – 2022</div>
+                </div>
+                <div class="job-description">
+                    <div class="job-point">Led Product Management, UX Design, and PLG strategy across Netlify's platform.</div>
+                    <div class="job-point">Scaled user acquisition and activation through data-driven growth experiments.</div>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-role"><span class="company">Uber</span> – Head of Product, Growth Platform</div>
+                    <div class="duration">2017 – 2021</div>
+                </div>
+                <div class="job-description">
+                    <div class="job-point">Built Uber's growth automation platform integrating with 500+ internal services, powering global Rider, Driver, and Eats marketing.</div>
+                    <div class="job-point">Launched communication infrastructure across Email, SMS, Push, and In-App, driving $250M+ in gross bookings and reducing channel costs by $35M.</div>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-role"><span class="company">Dell EMC</span> – Sr. Director, Product Management</div>
+                    <div class="duration">2013 – 2017</div>
+                </div>
+                <div class="job-description">
+                    <div class="job-point">Founded product team for Elastic Cloud Storage (ECS), scaling run-rate to $200M.</div>
+                    <div class="job-point">Managed 14 PMs across global object storage portfolio.</div>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-role"><span class="company">Microsoft</span> – Principal Lead Program Manager, Windows Azure</div>
+                    <div class="duration">2009 – 2013</div>
+                </div>
+                <div class="job-description">
+                    <div class="job-point">Early product leader for Azure's Fabric Controller—Microsoft's "cloud kernel" managing 100,000+ servers.</div>
+                    <div class="job-point">Delivered cross-team initiatives enabling stateful services on Azure, directly impacting enterprise adoption.</div>
+                    <div class="job-point">(Earlier Roles: Program Manager – Windows 7 & Windows Live, OMS Software Development Manager, Startup Founder)</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Achievements -->
+        <div class="section">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievement-group">
+                <div class="achievement-category">Revenue Growth:</div>
+                <div class="achievement-text">Delivered $250M+ bookings at Uber; scaled EMC ECS to $200M run-rate.</div>
+            </div>
+            <div class="achievement-group">
+                <div class="achievement-category">Cost Savings:</div>
+                <div class="achievement-text">Reduced Uber channel delivery costs by $35M.</div>
+            </div>
+            <div class="achievement-group">
+                <div class="achievement-category">Innovation:</div>
+                <div class="achievement-text">5 U.S. patents in distributed systems and cloud reliability.</div>
+            </div>
+            <div class="achievement-group">
+                <div class="achievement-category">Leadership:</div>
+                <div class="achievement-text">Built and scaled teams across startups and enterprises (up to 14 PMs and 50+ engineers).</div>
+            </div>
+        </div>
+        
+        <!-- Education -->
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <strong>B.Sc. Computer Science</strong> – The American University in Cairo
+            </div>
+            <div class="education-item">
+                <strong>Summer Program</strong> – UCLA, Internet Programming with Java
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Add print functionality
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'p') {
+                window.print();
+            }
+        });
+        
+        // Optimize for PDF generation
+        if (window.location.search.includes('pdf')) {
+            document.body.style.background = 'white';
+        }
+    </script>
+</body>
+</html>
